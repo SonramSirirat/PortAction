@@ -22,9 +22,9 @@ jobs:
         uses: port-labs/port-github-action@v1
         with:
           # clientId: ${{ secrets.PORT_CLIENT_ID }}
-          clientId: 5qEPuShTw6YatBSOekQj4vxlOlq4xigo
+          clientId: s.sonram@gmail.com
           # clientSecret: ${{ secrets.PORT_CLIENT_SECRET }}
-          clientSecret: OHRPQG420Q9sROVREhfOZhqOSZHNVxwAzaInCPakIt0qLiWDnsKirajlHvfQ7FrH
+          clientSecret: LjqBbNuXnyyuRoBgHg9Ql0rpV8wqjHW2bZjYwy4BeqcnVu4Pg7xTXILmAn6VEezz
           operation: PATCH_RUN
           runId: ${{ fromJson(inputs.port_payload).context.runId }}
           logMessage: |
@@ -58,9 +58,9 @@ jobs:
         uses: port-labs/port-github-action@v1
         with:
           # clientId: ${{ secrets.PORT_CLIENT_ID }}
-          clientId: 5qEPuShTw6YatBSOekQj4vxlOlq4xigo
+          clientId: s.sonram@gmail.com
           # clientSecret: ${{ secrets.PORT_CLIENT_SECRET }}
-          clientSecret: OHRPQG420Q9sROVREhfOZhqOSZHNVxwAzaInCPakIt0qLiWDnsKirajlHvfQ7FrH
+          clientSecret: LjqBbNuXnyyuRoBgHg9Ql0rpV8wqjHW2bZjYwy4BeqcnVu4Pg7xTXILmAn6VEezz
           operation: DELETE
           delete_dependents: ${{ inputs.delete_dependents }}
           identifier: ${{ fromJson(inputs.port_payload).context.entity }}
@@ -70,9 +70,9 @@ jobs:
         uses: port-labs/port-github-action@v1
         with:
           # clientId: ${{ secrets.PORT_CLIENT_ID }}
-          clientId: 5qEPuShTw6YatBSOekQj4vxlOlq4xigo
+          clientId: s.sonram@gmail.com
           # clientSecret: ${{ secrets.PORT_CLIENT_SECRET }}
-          clientSecret: OHRPQG420Q9sROVREhfOZhqOSZHNVxwAzaInCPakIt0qLiWDnsKirajlHvfQ7FrH
+          clientSecret: LjqBbNuXnyyuRoBgHg9Ql0rpV8wqjHW2bZjYwy4BeqcnVu4Pg7xTXILmAn6VEezz
           operation: PATCH_RUN
           runId: ${{ fromJson(inputs.port_payload).context.runId }}
           logMessage: |
