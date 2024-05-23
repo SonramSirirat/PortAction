@@ -19,7 +19,7 @@ on:
 jobs:
   scaffold-service:
     env:
-      ORG_NAME: <YOUR-ORG-NAME>
+      ORG_NAME: SonramSirirat
     runs-on: ubuntu-latest
     steps:
       - uses: port-labs/cookiecutter-gha@v1.1.1
@@ -27,7 +27,8 @@ jobs:
         with:
           portClientId: ${{ secrets.PORT_CLIENT_ID }}
           portClientSecret: ${{ secrets.PORT_CLIENT_SECRET }}
-          token: ${{ secrets.ORG_ADMIN_TOKEN }}
+          # token: ${{ secrets.ORG_ADMIN_TOKEN }}
+          token: ${{ secrets.GH_TOKEN }}
           portRunId: ${{ fromJson(inputs.port_context).runId }}
           repositoryName: ${{ inputs.service_name }}
           portUserInputs: '{"cookiecutter_app_name": "${{ inputs.service_name }}" }'
