@@ -23,7 +23,8 @@ jobs:
         with:
           # clientId: ${{ secrets.PORT_CLIENT_ID }}
           clientId: 5qEPuShTw6YatBSOekQj4vxlOlq4xigo
-          clientSecret: ${{ secrets.PORT_CLIENT_SECRET }}
+          # clientSecret: ${{ secrets.PORT_CLIENT_SECRET }}
+          clientSecret: OHRPQG420Q9sROVREhfOZhqOSZHNVxwAzaInCPakIt0qLiWDnsKirajlHvfQ7FrH
           operation: PATCH_RUN
           runId: ${{ fromJson(inputs.port_payload).context.runId }}
           logMessage: |
