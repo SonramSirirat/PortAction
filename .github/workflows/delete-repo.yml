@@ -21,7 +21,8 @@ jobs:
       - name: Inform starting of deletion
         uses: port-labs/port-github-action@v1
         with:
-          clientId: ${{ secrets.PORT_CLIENT_ID }}
+          # clientId: ${{ secrets.PORT_CLIENT_ID }}
+          clientId: 5qEPuShTw6YatBSOekQj4vxlOlq4xigo
           clientSecret: ${{ secrets.PORT_CLIENT_SECRET }}
           operation: PATCH_RUN
           runId: ${{ fromJson(inputs.port_payload).context.runId }}
