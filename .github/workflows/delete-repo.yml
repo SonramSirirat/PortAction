@@ -21,10 +21,8 @@ jobs:
       - name: Inform starting of deletion
         uses: port-labs/port-github-action@v1
         with:
-          # clientId: ${{ secrets.PORT_CLIENT_ID }}
-          clientId: s.sonram@gmail.com
-          # clientSecret: ${{ secrets.PORT_CLIENT_SECRET }}
-          clientSecret: LjqBbNuXnyyuRoBgHg9Ql0rpV8wqjHW2bZjYwy4BeqcnVu4Pg7xTXILmAn6VEezz
+          clientId: ${{ secrets.PORT_CLIENT_ID }}
+          clientSecret: ${{ secrets.PORT_CLIENT_SECRET }}
           operation: PATCH_RUN
           runId: ${{ fromJson(inputs.port_payload).context.runId }}
           logMessage: |
@@ -57,10 +55,8 @@ jobs:
         if: ${{ env.delete_successful == 'true' }}
         uses: port-labs/port-github-action@v1
         with:
-          # clientId: ${{ secrets.PORT_CLIENT_ID }}
-          clientId: s.sonram@gmail.com
-          # clientSecret: ${{ secrets.PORT_CLIENT_SECRET }}
-          clientSecret: LjqBbNuXnyyuRoBgHg9Ql0rpV8wqjHW2bZjYwy4BeqcnVu4Pg7xTXILmAn6VEezz
+          clientId: ${{ secrets.PORT_CLIENT_ID }}
+          clientSecret: ${{ secrets.PORT_CLIENT_SECRET }}
           operation: DELETE
           delete_dependents: ${{ inputs.delete_dependents }}
           identifier: ${{ fromJson(inputs.port_payload).context.entity }}
@@ -69,10 +65,8 @@ jobs:
       - name: Inform completion of deletion
         uses: port-labs/port-github-action@v1
         with:
-          # clientId: ${{ secrets.PORT_CLIENT_ID }}
-          clientId: s.sonram@gmail.com
-          # clientSecret: ${{ secrets.PORT_CLIENT_SECRET }}
-          clientSecret: LjqBbNuXnyyuRoBgHg9Ql0rpV8wqjHW2bZjYwy4BeqcnVu4Pg7xTXILmAn6VEezz
+          clientId: ${{ secrets.PORT_CLIENT_ID }}
+          clientSecret: ${{ secrets.PORT_CLIENT_SECRET }}
           operation: PATCH_RUN
           runId: ${{ fromJson(inputs.port_payload).context.runId }}
           logMessage: |
